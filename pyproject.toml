@@ -1,3 +1,49 @@
 [build-system]
-requires = ["setuptools", "wheel"]
-build-backend = "setuptools.build_meta"
+# requires = ["setuptools", "wheel"]
+# build-backend = "setuptools.build_meta"
+
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry]
+version = "0.0.1"
+name = "majsoul-rpa"
+description = "A Robotic Process Automation (RPA) framework for Mahjong Soul (雀魂)"
+authors = ["Cryolite <cryolite.indigo@gmail.com>"]
+homepage = "https://github.com/Cryolite/majsoul-rpa"
+# license = "MIT"
+# authors = ["Apricot-S"]
+classifiers = [
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+]
+readme = "README.md"
+keywords = ["mahjong", "Mahjong Soul", "Majsoul", "automation", "RPA"]
+packages = [{include = "majsoulrpa", from = "src"}]
+
+
+[tool.poetry.scripts]
+pre-install = "install_scripts:pre_install"
+post-install = "install_scripts:post_install"
+
+
+[tool.poetry.dependencies]
+#python = "^3.8"
+python = "^3.11"
+boto3 = "*"
+docker = "*"
+ewmh = "*"
+jsonschema = "*"
+numpy = "*"
+opencv-python = "*"
+Pillow = "*"
+protobuf = "*"
+pyautogui = "*"
+pygetwindow = "*"
+pyyaml = "*"
+redis = "*"
+selenium = "*"
+
+[tool.poetry.dev-dependencies]
