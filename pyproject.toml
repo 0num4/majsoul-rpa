@@ -1,9 +1,11 @@
 [tool.poetry]
 name = "majsoul-rpa"
-version = "0.1.0"
-description = ""
-authors = ["0num4 <r.oonuma@matsuri-tech.com>"]
+version = "0.0.1"
+description = "A Robotic Process Automation (RPA) framework for Mahjong Soul (雀魂)"
+authors = ["Cryolite <cryolite.indigo@gmail.com>"]
+homepage = "https://github.com/Cryolite/majsoul-rpa"
 readme = "README.md"
+keywords = ["mahjong", "Mahjong Soul", "Majsoul", "automation", "RPA"]
 packages = [{include = "majsoul_rpa"}]
 
 [tool.poetry.dependencies]
@@ -21,6 +23,7 @@ PyAutoGUI = "^0.9.54"
 jsonschema = "^4.20.0"
 ewmh = "^0.1.6"
 numpy = "^1.26.2"
+kanachan = {git = "https://github.com/Cryolite/kanachan.git"}
 
 
 [build-system]
