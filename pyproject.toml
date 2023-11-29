@@ -24,6 +24,9 @@ jsonschema = "^4.20.0"
 ewmh = "^0.1.6"
 numpy = "^1.26.2"
 kanachan = {git = "https://github.com/Cryolite/kanachan.git"}
+torch = "^2.1.1"
+torchvision = "^0.16.1"
+torchaudio = "^2.1.1"
 
 
 [build-system]
